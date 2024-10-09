@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carta para mi Novio</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff;
+            font-family: Arial, sans-serif;
+        }
+        .corazon {
+            width: 100px;
+            height: 100px;
+            background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Heart_coraz%C3%B3n.svg/640px-Heart_coraz%C3%B3n.svg.png'); /* Cambia esto por la URL de tu imagen */
+            background-size: cover;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .corazon:hover {
+            transform: scale(1.1);
+        }
+        .carta {
+            display: none;
+            margin-top: 20px;
+            text-align: center;
+            font-size: 18px;
+            color: #333;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .carta img {
+            width: 100px; 
+            height: auto;
+            margin-bottom: 20px; 
+        }
+
+        .imagen-derecha {
+            float: right; /* Alinea la imagen a la derecha */
+            width: 100px; /* Ajusta el tamaño deseado */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-left: 20px; /* Espacio a la izquierda de la imagen */
+        }
+        .imagen-izquierda {
+            float: left; /* Alinea la imagen a la derecha */
+            width: 100px; /* Ajusta el tamaño deseado */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-left: 20px; /* Espacio a la izquierda de la imagen */
+        }
+        .imagen-centro {
+            float: center; /* Alinea la imagen a la derecha */
+            width: 100px; /* Ajusta el tamaño deseado */
+            height: auto; /* Mantiene la relación de aspecto */
+            margin-left: 20px; /* Espacio a la izquierda de la imagen */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="corazon" onclick="mostrarCarta()"></div>
+    <div class="carta" id="carta">
+        <img src="img/foto1.jpeg" alt="Tu imagen aquí">
+        <p>Hola mi amor,</p>
+        <p>Hoy es 10, mi dia favorito por siempre,otro mes mas a tu lado 2 años 3 meses que se me han pasado volando</p>
+        <p>Siempre te voy agradecer por todo lo que me das ,por hacerme muy feliz, por quererme y cuidarme ,</p>
+        <p>te lo eh dicho mil veces y mil veces te lo voy a repetir</p>
+        <p>TE AMO CON TODO MI SER,eres lo mejor que me pudo pasar llegaste para cambiar mi vida </p>
+        <p>y tlj q me encantaria que te quedaras conmigo para siempre </p>
+        <p>Me encanta pasar tiempo contigo ,aunque sean unos minutitos ,yo encantada de verte disfruto muchisimo hacer cosas nuevas juntos ,</p>
+        <p>experimentar cosas </p>
+        <p>Siempre siempre voy a estar para ti Me encantas mucho</p>
+       <p> Feliz mes nuevo bebe ,que sean muchos muchos mas juntos.</p>
+        <p> TE AMO MI RODRI</p>
+        <img src="img/foto2.jpeg" alt="Tu imagen aquí" class="imagen-derecha">
+        <img src="img/foto3.jpeg" alt="Tu imagen aquí" class="imagen-izquierda">
+        <img src="img/foto6.jpeg" alt="Tu imagen aquí" class="imagen-centro">
+    </div>
+  
+    <script>
+        function mostrarCarta() {
+            document.getElementById("carta").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
